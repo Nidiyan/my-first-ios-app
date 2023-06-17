@@ -14,27 +14,26 @@ class StockAPI {
         self.api_url = api_url
     }
     
-    func getData() {
+    func getData(completion: @escaping (_ data: Any?, _ error: Error?) -> Void) {
         print("[StockAPIgetData] Sending Request")
-        //var api_data: Dictionary<String, Any>
-        
-        var request = URLRequest(url: api_url)
-        request.httpMethod = "GET"
-        
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard error == nil else { print(error!.localizedDescription); return }
-            guard let data = data else { print("Empty data"); return }
-            
-            do {
-                if let jsonData = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [Dictionary<String, Any>] {
-                    print(jsonData)
-                } else {
-                    print("no")
-                }
-            } catch let error {
-                print(error)
+        let task = URLSession.shared.dataTask(with: api_url, completionHandler: { data, response, error in
+            if let error = error {
+                completion(nil, error)
+                return
             }
-        }.resume()
+            do {
+                if let data = data {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [.allowFragments])
+                    completion(json, nil)
+                } else {
+                    completion(nil, nil)
+                }
+            } catch {
+                completion(nil, error)
+            }
+        })
+        
+        task.resume()
     }
     
 }

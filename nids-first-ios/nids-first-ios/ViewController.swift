@@ -32,9 +32,15 @@ class ViewController: UIViewController {
         print("[Main] Button clicked, getting API data")
         
         let stocks = StockAPI(api_url: constants.urls.stock_api_url!)
-        let api_data = stocks.getData();
         
-        print(api_data)
+        stocks.getData(completion: { [weak self] (result, error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                    }
+                    if let result = result {
+                        print(result)
+                    }
+                })
     }
 
 

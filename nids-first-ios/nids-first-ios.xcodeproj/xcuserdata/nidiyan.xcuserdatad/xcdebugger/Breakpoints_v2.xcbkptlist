@@ -39,32 +39,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "93D05FA8-554E-43DF-82E9-40E2279EFBD8"
-            shouldBeEnabled = "No"
+            uuid = "C8DDAAD9-BD49-4A65-94C0-2611CF401EAD"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "nids-first-ios/stock_api.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "getData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "808253F4-1483-4BE4-BC31-BE3C7EC75E3E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "nids-first-ios/stock_api.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "getData()"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getData(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
