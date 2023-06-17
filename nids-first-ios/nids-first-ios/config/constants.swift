@@ -9,6 +9,6 @@ import Foundation
 
 struct constants {
     struct urls {
-     var stock_api_url = "https://tradestie.com/api/v1/apps/reddit"
+        public static let stock_api_url = URL(string: "https://tradestie.com/api/v1/apps/reddit")
     }
 }

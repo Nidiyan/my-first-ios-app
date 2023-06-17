@@ -14,6 +14,7 @@
 		C659222E2A3E35D2003E5AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C659222D2A3E35D2003E5AF8 /* Assets.xcassets */; };
 		C65922312A3E35D2003E5AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C659222F2A3E35D2003E5AF8 /* LaunchScreen.storyboard */; };
 		C659223A2A3E361E003E5AF8 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65922392A3E361E003E5AF8 /* constants.swift */; };
+		C659223D2A3E3BBF003E5AF8 /* stock_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659223C2A3E3BBF003E5AF8 /* stock_api.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C65922302A3E35D2003E5AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C65922322A3E35D2003E5AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C65922392A3E361E003E5AF8 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		C659223C2A3E3BBF003E5AF8 /* stock_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stock_api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C659222D2A3E35D2003E5AF8 /* Assets.xcassets */,
 				C659222F2A3E35D2003E5AF8 /* LaunchScreen.storyboard */,
 				C65922322A3E35D2003E5AF8 /* Info.plist */,
+				C659223C2A3E3BBF003E5AF8 /* stock_api.swift */,
 			);
 			path = "nids-first-ios";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				C65922292A3E35D1003E5AF8 /* ViewController.swift in Sources */,
 				C65922252A3E35D1003E5AF8 /* AppDelegate.swift in Sources */,
+				C659223D2A3E3BBF003E5AF8 /* stock_api.swift in Sources */,
 				C65922272A3E35D1003E5AF8 /* SceneDelegate.swift in Sources */,
 				C659223A2A3E361E003E5AF8 /* constants.swift in Sources */,
 			);
